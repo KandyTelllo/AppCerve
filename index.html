@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cervecentro</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+<h1>Registro de Ventas</h1>
+
+<form id="ventaForm">
+    <input type="text" id="producto" placeholder="Producto" required>
+    <input type="number" id="cantidad" placeholder="Cantidad" required>
+    <input type="number" id="precio" placeholder="Precio por unidad" required>
+    <button type="submit">Registrar Venta</button>
+</form>
+
+<h2>Ventas Registradas</h2>
+<button id="borrarVentas" style="margin-bottom: 20px;">🧹 Borrar todas las ventas</button>
+<ul id="listaVentas"></ul>
+
+<h3>Totales</h3>
+<p><strong>Total General:</strong> $<span id="totalGeneral">0.00</span></p>
+<p><strong>Total Diario:</strong> $<span id="totalDiario">0.00</span></p>
+<p><strong>Total Semanal:</strong> $<span id="totalSemanal">0.00</span></p>
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

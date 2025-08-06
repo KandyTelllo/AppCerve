@@ -1,0 +1,96 @@
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+padding: 0;
+background-color: #f4f4f4;
+color: #333;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+max-width: 400px;
+margin: 0 auto 20px;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="number"],
+button {
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+ul#listaVentas {
+list-style: none;
+padding: 0;
+max-width: 600px;
+margin: 0 auto;
+}
+
+ul#listaVentas li {
+background: white;
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 6px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Totales */
+#totales {
+max-width: 600px;
+margin: 20px auto;
+background: white;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botón borrar */
+#borrarVentas {
+display: block;
+margin: 0 auto 20px;
+background-color: #dc3545;
+}
+
+#borrarVentas:hover {
+background-color: #b52a37;
+}
+
+/* Diseño responsive para móviles */
+@media (max-width: 600px) {
+form, #totales, ul#listaVentas {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 10px;
+}
+
+input, button {
+    font-size: 1rem;
+}
+}
